@@ -25,8 +25,6 @@ import com.example.weatherapp.screens.TabLayout
 import com.example.weatherapp.ui.theme.WeatherAppTheme
 import org.json.JSONObject
 
-const val API_KEY = ""
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -83,7 +81,7 @@ private fun getData(
     city: String, context: Context,
     daysList: MutableState<List<WeatherModel>>, currentDay: MutableState<WeatherModel>
 ) {
-    val url = "https://api.weatherapi.com/v1/forecast.json?key=$API_KEY" +
+    val url = "https://api.weatherapi.com/v1/forecast.json?key=${context.getString(R.string.api_key)}" +
             "&q=$city" +
             "&days=" +
             "3" +
