@@ -1,6 +1,7 @@
 # Weather app by Ayni
 
-hello everyone! this app is my first android project and also its uding jetpack compose technology
+hello everyone! this app is my first android project and it also using jetpack compose technology.
+
 this app also has a lot of bugs and technological omissions
 that i `might` fix if i don't forget about it
 
