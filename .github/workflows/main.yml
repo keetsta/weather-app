@@ -1,0 +1,13 @@
+name: Build
+on: [pull_request, push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+      - uses: sparkfabrik/android-build-action@v1.3.4
+        with:
+            project-path: app/scr
+            output-path: weather app.apk
+            browserstack-upload: true
+            bundler-version: "2.3.26"
