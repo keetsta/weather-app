@@ -1,0 +1,10 @@
+name: Build
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: sparkfabrik/android-build-action@v1.3.4
+      - name: Build Android App
+        run: ./gradlew build
