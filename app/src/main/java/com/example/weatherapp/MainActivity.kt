@@ -81,7 +81,8 @@ private fun getData(
     city: String, context: Context,
     daysList: MutableState<List<WeatherModel>>, currentDay: MutableState<WeatherModel>
 ) {
-    val url = "https://api.weatherapi.com/v1/forecast.json?key=${context.getString(R.string.api_key)}" +
+    val url = "https://api.weatherapi.com/v1/forecast.json" +
+            "?key=${context.getString(R.string.api_key)}" +
             "&q=$city" +
             "&days=" +
             "3" +
